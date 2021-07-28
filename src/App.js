@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import Section from './Components/Section';
 import FeedbackOptions from './Components/FeedbackOptions';
@@ -9,8 +9,6 @@ export default function App() {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-
-  useEffect(() => {});
 
   const leaveFeedback = feedback => {
     switch (feedback) {
